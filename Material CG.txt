@@ -1,0 +1,88 @@
+Material para Disciplina de Computação Gráfica:
+https://drive.google.com/drive/folders/1LHM7ZtVkwP0iI-qvnEBFcxDd4It3Qcm8?usp=sharing
+
+OpenGL e outros SDKs:
+https://drive.google.com/file/d/1pdtCGlhy-iI-3CemedPnCuxzFYRMBwAD/view?usp=sharing
+
+
+	//---------------------------------------------//
+
+	//Exercicio 1
+		//Funções para criar árvores
+			// 2 cones e 1 cilindro
+			//Cone
+				//auxSolidCone();
+			//Cilindro
+				//auxSolidCylinder();
+
+		//Variavel de tempo
+		//Ate chegar 45º
+			//Para e volta até -45º
+		//Ate chegar -45º
+			//Para e volta até 45º
+
+		//Exercicio 2
+			// Mapear Matriz com posições
+			// Anotar posições já usasdas
+			// Random passa nessas posições
+			// Depois de encher 5 pilhas de 10 cubos, limpa
+			// Limpar = Apagar todos
+		
+		//Exercicio 3
+			//Criar com cubos e quadrados, bem simples
+		
+		//Exercicio 4
+			// Leitura conforme aulas passadas
+			// Vértice e Textura 3x até fechar o triângulo
+
+	//---------------------------------------------//
+
+
+	
+	/*
+	for (int i = -500; i <= 500; i += 50)
+	{
+		for (int j = -500; j <= 500; j += 50)
+		{
+			// Casa
+			glPushMatrix();
+			glTranslatef(i, 0.0f, j);	
+			glBegin(GL_TRIANGLES);
+			for (int i = 0; i < 68; i++)
+			{
+				int p1 = vCasaIndexes[i].p1;
+				int p2 = vCasaIndexes[i].p2;
+				int p3 = vCasaIndexes[i].p3;
+
+				glColor3ub(((-6.12f + vCasaVertices[p3].z) + 200.0f), ((-6.12f + vCasaVertices[p3].z) + 200.0f), ((-6.12f + vCasaVertices[p3].z) + 200.0f));
+
+				if (vCasaVertices[p3].z > 5.0f)
+					glColor3ub(255, 255, 255);
+				if ((vCasaVertices[p3].z <= 4.0f) && (vCasaVertices[p3].z >= -4.0f))
+					glColor3ub(128, 128, 128);
+				if (vCasaVertices[p3].z < -5.0f)
+					glColor3ub(50, 50, 50);
+
+				
+				glVertex3f(vCasaVertices[p1].x, vCasaVertices[p1].y, vCasaVertices[p1].z);
+				glVertex3f(vCasaVertices[p2].x, vCasaVertices[p2].y, vCasaVertices[p2].z);
+				glVertex3f(vCasaVertices[p3].x, vCasaVertices[p3].y, vCasaVertices[p3].z);
+				
+			}
+			glEnd();
+			glPopMatrix();
+
+
+
+			// Casa
+			//glPushMatrix();
+			//glTranslatef(i, 0.0f, j);
+			//glColor4ub(255, 255, 255, 255);
+			//glEnableClientState(GL_VERTEX_ARRAY);
+			//glVertexPointer(3, GL_FLOAT, 0, &this->vCasaVerticesVA.front());
+			//glDrawElements(GL_TRIANGLES, vCasaIndexesVA.size(), GL_UNSIGNED_INT, &this->vCasaIndexesVA[0]);
+			//glDisableClientState(GL_VERTEX_ARRAY);
+			//glPopMatrix();
+		}
+	}
+	*/

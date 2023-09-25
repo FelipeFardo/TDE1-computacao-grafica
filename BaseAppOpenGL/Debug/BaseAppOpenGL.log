@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (BaseAppOpenGL.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
+D:\URI\Semestre 6\Computacao_Grafica\Trabalhos\TDE1\BaseAppOpenGL\Main.cpp(182,3): warning C4838: conversion from 'int' to 'BYTE' requires a narrowing conversion
+  Scene6.cpp
+  Scene7.cpp
+  SceneManager.cpp
+  Generating Code...
+  BaseAppOpenGL.vcxproj -> D:\URI\Semestre 6\Computacao_Grafica\Trabalhos\TDE1\Debug\TDE1.exe
